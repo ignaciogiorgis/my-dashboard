@@ -1,10 +1,7 @@
 import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
-import { error } from "console";
-import Image from "next/image";
-import { notFound } from "next/navigation";
 
 const getPokemons = async (
-  limit = 251,
+  limit = 151,
   offset = 0
 ): Promise<SimplePokemon[]> => {
   const data: PokemonsResponse = await fetch(
